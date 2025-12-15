@@ -1,4 +1,4 @@
-let search = document.querySelector(".search-box");
+  let search = document.querySelector(".search-box");
 
 document.querySelector("#search-icon").onclick = () => {
     search.classList.toggle('active');
@@ -110,5 +110,9 @@ function updateCartCount() {
     const cartCount = cart.reduce((acc, item) => acc + item.quantity, 0);
     document.getElementById("cart-count").innerText = cartCount;
 }
+function openCartPage() {
+    window.location.href = "payment.html";
+}
+
 
 
