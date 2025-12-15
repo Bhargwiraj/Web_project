@@ -12,33 +12,35 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">
-            <img src="images/img/logo.png">
-        </a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#products">products</a></li>
-            <li><a href="#billing">Billing</a></li>
-            <li><a href="#customers">customers</a></li>
+     <header>
+     <a href="#" class="logo">
+        <img src="images/img/logo.png">
+    </a>
 
-        </ul>
-        <div class="header-icon">
+     <i class='bx bx-menu' id="menu-icon"></i>
 
-            <div class="cart-wrapper">
-                <i class='bx bx-cart-alt' id="cart-icon"></i>
-                <span id="cart-count">6</span>
-            </div>
+     <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#products">products</a></li>
+        <li><a href="#billing">Billing</a></li>
+        <li><a href="#customers">customers</a></li>
+    </ul>
 
-            <i class='bx bx-search-alt' id="search-icon"></i>
+     <div class="header-icon">
+
+         <div class="cart-wrapper">
+            <i class='bx bx-cart-alt' id="cart-icon" onclick="openCartPage()"></i>
+            <span id="cart-count">6</span>
         </div>
 
-        <div class="search-box">
-            <input type="search" name="" id="" placeholder="Search Here...">
-        </div>
-    </header>
+         <i class='bx bx-search-alt' id="search-icon"></i>
+    </div>
+
+     <div class="search-box">
+        <input type="search" placeholder="Search Here...">
+    </div>
+     </header>
     <section class="home" id="home">
         <div class="home-text">
             <h1>
@@ -584,5 +586,6 @@
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
