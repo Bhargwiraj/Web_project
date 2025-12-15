@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Payment Successful</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="billing" style="text-align:center">
+
+    <div style="
+        width:90px;
+        height:90px;
+        border-radius:50%;
+        background:#34a853;
+        color:white;
+        font-size:42px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:30px auto;
+    ">
+        ✓
+    </div>
+
+    <h2 style="color:#34a853">Payment Successful</h2>
+
+    <p id="successName"></p>
+    <p id="successUpi"></p>
+
+    <button class="btn" onclick="goHome()">Go to Home</button>
+</section>
+
+<script>
+document.getElementById("successName").innerText =
+    "Paid by: " + localStorage.getItem("payerName");
+
+document.getElementById("successUpi").innerText =
+    "UPI ID: " + localStorage.getItem("payerUpi");
+
+function goHome() {
+    localStorage.clear();
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
