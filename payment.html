@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="billing">
+  <h2>Payment Details</h2>
+
+  <input type="hidden" name="amount" id="totalAmountInput">
+
+  <div id="cartItems"></div>
+
+  <div class="qr-section">
+    <h3>Total Amount: <span id="totalAmount">Rs.0</span></h3>
+    <h3>Scan QR to Pay</h3>
+    <img src="images/img/QR.jpg" alt="QR Code">
+  </div>
+
+  <div class="input-box">
+    <label>Name</label>
+    <input type="text" name="name" id="payerName" required>
+  </div>
+
+  <div class="input-box">
+    <label>UPI ID</label>
+    <input type="text" name="upi_id" id="payerUpi" required>
+  </div>
+
+  <input type="hidden" name="_subject" value="New Payment Submission">
+
+ <button class="btn" type="button" onclick="goToSuccessPage()">Payment Done</button>
+
+</section>
+<script src="payment.js"></script>
+</body>
+</html>
